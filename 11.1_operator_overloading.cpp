@@ -20,7 +20,7 @@ class Complex
         cout << "\na= " << a << " b= " << b;
     }
     //Complex add(Complex c)
-    Complex operator -(Complex c) // Any symbol can be used as a function name, if it is a valid operator in c language, if it is preceded by operator keyword.
+    Complex operator +(Complex c) // Any symbol can be used as a function name, if it is a valid operator in c language, if it is preceded by operator keyword.
     {
         Complex temp;
         temp.a = a + c.a;
@@ -41,7 +41,7 @@ int main()
     c2.setData(5,6);
 
     //c3 = c1.add(c2);
-    c3 = c1  c2;
+    c3 = c1+c2;
     c3.showData();
  
     return 0;
